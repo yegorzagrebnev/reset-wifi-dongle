@@ -9,5 +9,5 @@ if ($adapter) {
 
     Enable-NetAdapter -Name $adapter.Name -Confirm:$false
 } else {
-    Write-Host "Adapter '$adapterName' not found!"
+    Write-Host "Unable to find adapter named '$adapterName'."
 }
